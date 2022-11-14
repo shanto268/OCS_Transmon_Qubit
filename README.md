@@ -27,10 +27,10 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
     d. Be careful of mesh parameters 
 
         - maximum meshing size should be at least half of smallest feature
-
         - Define mesh resolution for separate components according to the rule ^
 
     e. Calculate $E_j$
+
         - $\hbar \omega_{01} = \sqrt(8 E_j E_c) - E_c $
 
     f. Change simulation parameters (i.e. qubit + claw + JJ parameters) to get $E_j/E_c \approx 20$
@@ -53,7 +53,9 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
     a. Get the JJ length for each qubit
 
         - $L_j$ from $E_j$
+
         - `L_j = junction_area * critical_current_density`
+
         - `Junction_area = JJ_length * JJ_width`
 
 

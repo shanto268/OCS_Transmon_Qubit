@@ -1,6 +1,6 @@
 # Goal:
 
-An OCS qubit with $\frac{E_j}{E_c} \approx 20$
+Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Lincoln Lab, MIT.
 
 # Constraints:
 
@@ -22,10 +22,15 @@ An OCS qubit with $\frac{E_j}{E_c} \approx 20$
     b. Claws as port
     c. No other components on chip 
     d. Be careful of mesh parameters 
+
         i. maximum meshing size should be at least half of smallest feature
+
         ii. Define mesh resolution for separate components according to the rule ^
+
     e. Calculate $E_j$
+
         i. $\hbar \omega_{01} = \sqrt(8 E_j E_c) - E_c $
+
     f. Change simulation parameters (i.e. qubit + claw + JJ parameters) to get $E_j/E_c \approx 20$
 
 3) Compute $\omega_{03}$
@@ -33,7 +38,9 @@ An OCS qubit with $\frac{E_j}{E_c} \approx 20$
 4) Simulate (S21) a claw + CPW resonator + 2-port transmission line from the standard candle qubit design
 
     a. Get $\omega_{res}$
+
         i. Fit with `lflPython/fitTools/Resonator.py` tool
+
     b. Change resonator length to get $\omega_{res} = \omega_{03}$
 
 5) Choose 5 physical parameters of the qubit that have $E_j/E_c \in (10,30)$ (steps 1 and 2)
@@ -43,8 +50,11 @@ An OCS qubit with $\frac{E_j}{E_c} \approx 20$
 7) Adjust the GDS file with the final chip design to comply with **LL SQUILL** Submission Requirements
 
     a. Get the JJ length for each qubit
+
         i. $L_j$ from $E_j$
+
         ii. `L_j = junction_area * critical_current_density`
+
         iii. `Junction_area = JJ_length * JJ_width`
 
 

@@ -4,8 +4,8 @@ An OCS qubit with $\frac{E_j}{E_c} \approx 20$
 #Constraints:
 	- Resonator frequency between 4 -  12 GHz (due to circulator, amplifiers and mixers)
 	- $\omega_{res} \approx \omega_{03}$ of qubit 
-  - \omega_{03} = 3 \omega_{01} - 2 * α
-	- \omega_{01} needs to be between 2 and 6 GHz
+  - $\omega_{03} = 3 \omega_{01} - 2 * α$
+	- $\omega_{01}$ needs to be between 2 and 6 GHz
 
 ---
 

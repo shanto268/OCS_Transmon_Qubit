@@ -19,10 +19,15 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
 2) Simulate (EPR) the qubit+ claw design to get $E_c  , \omega_{01}, \alpha$
 
     a. Ensure hyperparameters meet LL SQUILL Foundry requirements 
+
     b. Claws as port
+
     c. No other components on chip 
+
     d. Be careful of mesh parameters 
+
         - maximum meshing size should be at least half of smallest feature
+
         - Define mesh resolution for separate components according to the rule ^
 
     e. Calculate $E_j$

@@ -22,14 +22,11 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
     b. Claws as port
     c. No other components on chip 
     d. Be careful of mesh parameters 
-
-        i. maximum meshing size should be at least half of smallest feature
-
-        ii. Define mesh resolution for separate components according to the rule ^
+        - maximum meshing size should be at least half of smallest feature
+        - Define mesh resolution for separate components according to the rule ^
 
     e. Calculate $E_j$
-
-        i. $\hbar \omega_{01} = \sqrt(8 E_j E_c) - E_c $
+        - $\hbar \omega_{01} = \sqrt(8 E_j E_c) - E_c $
 
     f. Change simulation parameters (i.e. qubit + claw + JJ parameters) to get $E_j/E_c \approx 20$
 
@@ -38,8 +35,7 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
 4) Simulate (S21) a claw + CPW resonator + 2-port transmission line from the standard candle qubit design
 
     a. Get $\omega_{res}$
-
-        i. Fit with `lflPython/fitTools/Resonator.py` tool
+        - Fit with `lflPython/fitTools/Resonator.py` tool
 
     b. Change resonator length to get $\omega_{res} = \omega_{03}$
 
@@ -51,10 +47,8 @@ Design an OCS qubit with $\frac{E_j}{E_c} \approx 20$ for fabrication through Li
 
     a. Get the JJ length for each qubit
 
-        i. $L_j$ from $E_j$
-
-        ii. `L_j = junction_area * critical_current_density`
-
-        iii. `Junction_area = JJ_length * JJ_width`
+        - $L_j$ from $E_j$
+        - `L_j = junction_area * critical_current_density`
+        - `Junction_area = JJ_length * JJ_width`
 
 

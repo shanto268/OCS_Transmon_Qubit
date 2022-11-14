@@ -1,15 +1,18 @@
-#Goal:
+# Goal:
+
 An OCS qubit with $\frac{E_j}{E_c} \approx 20$
 
-#Constraints:
-	- Resonator frequency between 4 -  12 GHz (due to circulator, amplifiers and mixers)
-	- $\omega_{res} \approx \omega_{03}$ of qubit 
-  - $\omega_{03} = 3 \omega_{01} - 2 * α$
-	- $\omega_{01}$ needs to be between 2 and 6 GHz
+# Constraints:
+
+- Resonator frequency between 4 -  12 GHz (due to circulator, amplifiers and mixers)
+- $\omega_{res} \approx \omega_{03}$ of qubit 
+- $\omega_{03} = 3 \omega_{01} - 2 * α$
+- $\omega_{01}$ needs to be between 2 and 6 GHz
 
 ---
 
 # Workflow:
+
 1) Isolate qubit + claw design from standard candle qubit design
     a. JJ is not an element in Ansys so might need to use Lumped Element Linear Inductor with the correct $L_j$ value instead
 
